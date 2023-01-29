@@ -42,26 +42,26 @@ class Program
             else if (option == 3)
             {                                                  
                 
-                    Console.Write("What is the file name? ");
-                    filename = Console.ReadLine(); 
-                    if (File.Exists(filename))
-                    { 
-                        lines = System.IO.File.ReadAllLines(filename);
-                        foreach (string line in lines)
-                        {
-                            string[] parts = line.Split(",");
-                            journal = new Journal();
-                            journal.readOption(journal, parts[0], parts[1], parts[2]);
-                            journalsList.Add(journal);                    
-                        }
-                        Console.WriteLine("File loaded successfully");
-                        Console.WriteLine("");                        
-                    }
-                    else
+                Console.Write("What is the file name? ");
+                filename = Console.ReadLine(); 
+                if (File.Exists(filename))
+                { 
+                    lines = System.IO.File.ReadAllLines(filename);
+                    foreach (string line in lines)
                     {
-                        Console.WriteLine($"The file: {filename} no exist, please check your input and try again");
-                        Console.WriteLine("");                        
-                    } 
+                        string[] parts = line.Split(",");
+                        journal = new Journal();
+                        journal.readOption(journal, parts[0], parts[1], parts[2]);
+                        journalsList.Add(journal);                    
+                    }
+                    Console.WriteLine("File loaded successfully");
+                    Console.WriteLine("");                        
+                }
+                else
+                {
+                    Console.WriteLine($"The file: {filename} no exist, please check your input and try again");
+                    Console.WriteLine("");                        
+                } 
                 
             }
             else if (option == 4)
