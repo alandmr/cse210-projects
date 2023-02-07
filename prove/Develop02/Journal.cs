@@ -5,7 +5,7 @@ public class Journal
     public string _date;
     public DateTime _theCurrentTime = DateTime.Now;
     public string _prompt;
-    public string _answerPrompt;
+    public string _answerPrompt;    
 
     public void writeOption()
     {
