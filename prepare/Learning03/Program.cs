@@ -23,7 +23,7 @@ class Program
 
         // Display result for 4th instance of fraction
         Console.WriteLine(fraction4.getFractionString());
-        Console.WriteLine(fraction4.getDecimalValue());        
+        Console.WriteLine(fraction4.getDecimalValue());               
         
     }
 }
