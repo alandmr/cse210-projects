@@ -1,0 +1,6 @@
+900
+SimpleGoal:Hacer la cena,Arepa con queso,100,False
+EternalGoal:Leer las escrituras,Leer 10 min diarios,50
+CheckListGoal:Ir al templo,Hacer ordenanzas de bautismo y confirmacion,50,500,3,3
+CheckListGoal:Ir a seminario,Ir cada dia a seminario,50,1000,5,1
+SimpleGoal:Hacer el desayuno,Pan con queso,100,True
